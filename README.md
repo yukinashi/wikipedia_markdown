@@ -1,0 +1,5 @@
+# wikipedia_markdown
+ウィキペディアAPIのmarkdownから本文を抜き出すコード
+wikipediaのAPIの出力からいい感じに本文を抜き出すコードです
+wikipedia_markdown関数にwikipediaのAPIの出力文字列を入れると返り値にmarkdownタグが消されて見やすくなったものが帰ってきます
+雑に作ったので完全にはキレイにならないかもしれません
