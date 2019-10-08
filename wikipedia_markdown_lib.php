@@ -1,6 +1,6 @@
 <?php
 function wikipedia_markdown($text){
-if(preg_match("/(^#REDIRECT|^#転送)/", $text)){
+if(preg_match("/(^#REDIRECT|^#転送)/", $text) == false){
 $text = preg_replace("/\\n/","new_line_replace",$text);
 $text = preg_replace("#(\\s|^.*?\'\'\'|\'\'\'|\[http.+?\]|\{[^\{\}]+?=[^\{\}]+?\}|\[|\]|\{|\}|\||==.+|<.+?>.+?<.+?>|<.+?>|-shor|-Hans|\*)#","",$text);
 $right = array("lang-en","lang-ru","lang-fr","lang-ar","lang-de","lang-el","lang-es","lang-it",'lang-ko','lang-zh',"IPA-fr","IPA-en","new_line_replace");
